@@ -83,26 +83,6 @@ python steg_tool.py
 
 ------------------------------------------------------------------------
 
-## 🖥 Convert to Portable EXE (Windows)
-
-Install PyInstaller:
-
-``` bash
-pip install pyinstaller
-```
-
-Build executable:
-
-``` bash
-pyinstaller --onefile --windowed --clean --collect-all PIL steg_tool.py
-```
-
-Your portable `.exe` file will be inside:
-
-    dist/
-
-------------------------------------------------------------------------
-
 ## 🔒 How It Works
 
 ### 1️⃣ Steganography (LSB Method)
@@ -141,8 +121,8 @@ Do not use it for malicious or illegal activities.
 
 ## 👨‍💻 Author
 
-Your Name\
-GitHub: https://github.com/your-username
+Gupthan Vishnu Prasad\
+GitHub: https://github.com/gvpofficial
 
 ------------------------------------------------------------------------
 
