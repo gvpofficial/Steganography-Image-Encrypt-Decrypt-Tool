@@ -1,131 +1,116 @@
-# 🔐 Steganography Hacker Tool
+# Advanced Steganography Suite – Image Edition
 
-A dark-themed GUI-based image steganography application built with
-**Python (Tkinter + Pillow)**.
+A professional dark-themed GUI application built with Python and Tkinter for secure image steganography.
 
-This tool allows users to securely hide secret messages inside images
-using LSB (Least Significant Bit) steganography with optional password
-protection.
+This tool allows users to hide encrypted text messages inside image files using LSB (Least Significant Bit) steganography. The system ensures reliable message embedding by using lossless image formats.
 
-------------------------------------------------------------------------
+---
 
-## 🚀 Features
+## 🔐 Features
 
-### 🖼 Image Handling
+- Image-only steganography (PNG, JPG, JPEG, BMP)
+- Password-protected message encryption (SHA-256 based XOR layer)
+- Dynamic expanding message input fields
+- Real-time progress percentage display
+- Image preview before encryption/decryption
+- Clean hacker-themed dark UI
+- Reset system functionality
+- Fast and reliable LSB embedding
+- Download encrypted image after processing
 
--   Upload image (PNG, JPG, JPEG)
--   Remove image
--   Image preview thumbnail
--   Displays filename, format, and resolution
--   Download encrypted image
+---
 
-### 🔐 Encryption
+## 🖼 Supported Formats
 
--   Hide secret message inside image
--   Optional password protection (SHA-256 based XOR encryption)
--   Capacity check (prevents overflow)
--   Re-encrypt multiple times
+- PNG (Recommended – Lossless)
+- JPG / JPEG
+- BMP
 
-### 🔓 Decryption
+⚠ For best reliability, use PNG format to prevent data loss.
 
--   Extract hidden message from encrypted image
--   Optional password support
--   Clear decrypted text option
-
-### 🧑‍💻 UI Features
-
--   Dark hacker-style theme
--   Live terminal-style log panel
--   Clean and stable layout
--   Fully GUI-based (no console needed)
-
-------------------------------------------------------------------------
+---
 
 ## 🛠 Technologies Used
 
--   Python 3.x
--   Tkinter (GUI)
--   Pillow (Image Processing)
--   hashlib (Password hashing)
+- Python 3
+- Tkinter (GUI)
+- Pillow (Image Processing)
+- Hashlib (Security Layer)
 
-------------------------------------------------------------------------
+---
 
-## 📂 Project Structure
+## 💻 Installation Instructions
 
-    Steganography-Hacker-Tool/
-    │
-    ├── steg_tool.py
-    ├── README.md
-    └── requirements.txt
+### 1️⃣ Clone the Repository
 
-------------------------------------------------------------------------
-
-## ⚙ Installation
-
-### 1️⃣ Clone the repository
-
-``` bash
-git clone https://github.com/your-username/Steganography-Hacker-Tool.git
-cd Steganography-Hacker-Tool
+```bash
+git clone https://github.com/gvpofficial/Steganography-Image-Encrypt-Decrypt-Tool.git
+cd Steganography-Image-Encrypt-Decrypt-Tool
 ```
 
-### 2️⃣ Install dependencies
+### 2️⃣ Install Required Dependencies
 
-``` bash
+```bash
 pip install pillow
 ```
 
-### 3️⃣ Run the application
+Tkinter usually comes pre-installed with Python.
 
-``` bash
+### 3️⃣ Run the Application
+
+```bash
 python steg_tool.py
 ```
 
-------------------------------------------------------------------------
+---
 
-## 🔒 How It Works
+## 🚀 How It Works
 
-### 1️⃣ Steganography (LSB Method)
+1. Upload an image.
+2. Enter your secret message.
+3. Optionally set a password.
+4. Click **Encrypt**.
+5. Download the encrypted image.
+6. To retrieve the message, upload the encrypted image and click **Decrypt**.
 
--   Each pixel has 3 color channels (RGB)
--   The least significant bit of each channel is modified
--   Secret message is converted to binary and embedded
--   A unique end marker (`#####END#####`) is added
+---
 
-### 2️⃣ Password Security
+## 📌 Notes
 
--   Password is hashed using SHA-256
--   XOR encryption is applied to the message
--   During decryption, same password restores original message
+- Only image files are supported.
+- Encrypted images should be saved as PNG for maximum reliability.
+- Larger images can store more hidden data.
+- This project is intended for educational and research purposes.
 
-------------------------------------------------------------------------
+---
 
-## 🎓 Academic Use
+## 📜 License (MIT License)
 
-This project is suitable for:
+MIT License
 
--   Cybersecurity demonstrations
--   Information security coursework
--   Final year mini project
--   Steganography practical lab
--   Python GUI projects
+Copyright (c) 2026 Gupthan Vishnu Prasad
 
-------------------------------------------------------------------------
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-## ⚠ Disclaimer
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-This project is developed for **educational purposes only**.\
-Do not use it for malicious or illegal activities.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
-------------------------------------------------------------------------
+---
 
 ## 👨‍💻 Author
 
-Gupthan Vishnu Prasad\
-GitHub: https://github.com/gvpofficial
-
-------------------------------------------------------------------------
-
-## ⭐ If you like this project
-
-Give it a ⭐ on GitHub!
+Developed by **Gupthan Vishnu Prasad**  
+Assisted by ChatGPT
