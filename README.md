@@ -88,7 +88,7 @@ python steg_tool.py
 
 MIT License
 
-Copyright (c) 2026 Gupthan Vishnu Prasad
+Copyright (c) 2026 GUPTHAN VISHNU PRASAD (GVP)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
