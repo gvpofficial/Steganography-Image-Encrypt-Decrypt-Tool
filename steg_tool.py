@@ -225,14 +225,25 @@ def decrypt():
 
 def download():
     global encrypted_result
-    if encrypted_result:
-        save = filedialog.asksaveasfilename(
-            defaultextension=".png",
-            filetypes=[("PNG Image", "*.png")]
-        )
-        if save:
-            encrypted_result.save(save)
-            log("Encrypted image saved.")
+
+    if not encrypted_result:
+        return
+
+    save_path = filedialog.asksaveasfilename(
+        title="Save Encrypted Image",
+        defaultextension=".png",
+        filetypes=[("PNG Image (Recommended)", "*.png")]
+    )
+
+    if not save_path:
+        return
+
+    # Force .png extension
+    if not save_path.lower().endswith(".png"):
+        save_path += ".png"
+
+    encrypted_result.save(save_path, format="PNG")
+    log("Encrypted image saved as PNG.")
 
 def reset_all():
     global enc_path,dec_path,encrypted_result
